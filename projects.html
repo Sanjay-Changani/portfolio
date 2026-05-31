@@ -218,7 +218,7 @@
                                 placeholder="How can I help you?" rows="4"></textarea>
                         </div>
                         <button
-                            class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold glow-button flex items-center justify-center gap-2"
+                            class="w-full bg-primary text-white text-on-primary py-4 rounded-lg font-bold glow-button flex items-center justify-center gap-2"
                             type="button">
                             Send Message
                             <span class="material-symbols-outlined">send</span>
@@ -245,9 +245,73 @@
             if (!grid) return;
 
             try {
-                const response = await fetch('data.json', { cache: 'no-store' });
-                if (!response.ok) throw new Error('Unable to load data.json');
-                const data = await response.json();
+                // const response = await fetch('data.json', { cache: 'no-store' });
+                // if (!response.ok) throw new Error('Unable to load data.json');
+                // const data = await response.json();
+                const data = {
+                    "page_title": "Sanjay's Portfolio",
+                    "page_tag_line": "Passionate and dedicated Mobile Developer with precision",
+                    "page_description": "Having 10+ year of hands-on experience in creating innovative mobile applications with iOS languages & tools. Adept and delivering performance-driven solutions, collaborating with cross-functional teams & adapting to evolving technology with mobile applications.",
+                    "user": {
+                        "profile_picture": "https://media.licdn.com/dms/image/v2/D5603AQEEfLWJ-Do-FA/profile-displayphoto-crop_800_800/B56Z2STjhhH4AM-/0/1776276096644?e=1781740800&v=beta&t=58rywrN7fZAbrxrzPfk9sfJAw6EaT8OoC9jPOhCIP1M",
+                        "name": "Sanjay",
+                        "title": "iOS Developer",
+                        "subtitle": "Experienced with Event management, Augmented Reality, IoT & Navigation based apps.",
+                        "description": "Passionate and dedicated Mobile Developer with hands-on experience in creating innovative applications with iOS.",
+                        "experience_years": "10",
+                        "total_projects": "20",
+                        "contact": {
+                            "email": "sanjaychangani90@gmail.com",
+                            "location": "Rajkot, Gujarat, India",
+                            "linkedin": "http://www.linkedin.com/in/sanjaychangani"
+                        },
+                        "experience": [
+                            {
+                                "company": "BMAC Infotech",
+                                "role": "Senior iOS Developer",
+                                "duration": "Oct 2017 — Present",
+                                "description": "Handling project management and team leading with latest tools and improved skills to provide quality products."
+                            },
+                            {
+                                "company": "Virtue Infotech",
+                                "role": "iOS Developer",
+                                "duration": "Jan 2014 — Oct 2017",
+                                "description": "iOS app developement with team mentorship. Improving apps with latest tools, user friendly experiance."
+                            }
+                        ]
+                    },
+                    "tech_stack": {
+                        "Languages": ["Swift", "SwiftUI", "ObjectiveC"],
+                        "tools": ["Git", "Bit Bucket", "Firebase", "Reality Copmposer"],
+                        "database": ["SQLite", "CoreData", "Firebase"]
+                    },
+                    "projects": [
+                        {
+                            "name": "Event Wizard, Tournament/League Center",
+                            "short_description": "A Platform where 10+ apps effortlessly manage event, tournament & leagues managing timelines, locations, Ground Mapping, scheduling, and scoring, ensuring a seamless & live experience for organisers and attendees. Empowered with live Augmented Reality advertisings, spatial aware contents & franchise based app personalisations.",
+                            "techstack": ["Swift", "SwiftUI", "Objective-C"],
+                            "link": "#https://apps.apple.com/us/app/tclc/id1622141358"
+                        },
+                        {
+                            "name": "Golf Apps",
+                            "short_description": "An AI-powered apps based on augmented reality that enables to track golf ball path tracking, person club swing analysis and 3D plaback visualization with ML & AI tools.",
+                            "techstack": ["ML models", "AR", "AI Services"],
+                            "link": "#https://apps.apple.com/us/app/golfform-swing-body-tracker/id6771797704"
+                        },
+                        {
+                            "name": "Lavaredo, eDIN",
+                            "short_description": "Real time device communication & home automation features sync. with an Augmented environment.",
+                            "techstack": ["Reality Kit", "Home automation Kit"],
+                            "link": "#https-//apps.apple.com/in/app/lavaredo/id6745585758"
+                        },
+                        {
+                            "name": "AR Apps",
+                            "short_description": "10+ of apps based on augmented reality and spacial content features. 3D content & environment creation, visualization and ML based tracking & analysis.",
+                            "techstack": ["Unity", "AR/Reality Kit"],
+                            "link": "#https://apps.apple.com/in/app/easy-distance-measure-ar/id1436691240"
+                       }
+                    ]
+                }
                 const projects = Array.isArray(data.projects) ? data.projects : [];
                 
                 const brand = document.getElementById('brand-title');
