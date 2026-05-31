@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Geist:wght@700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#1e293b",
+                        "on-primary-fixed": "#3f0049",
+                        "on-secondary-fixed-variant": "#0f3c91",
+                        "inverse-surface": "#0f172a",
+                        "on-error": "#7f1d1d",
+                        "tertiary": "#facc15",
+                        "surface-variant": "#e2e8f0",
+                        "on-background": "#0f172a",
+                        "on-primary-fixed-variant": "#5b21b6",
+                        "surface-dim": "#cbd5e1",
+                        "primary-fixed": "#f3e8ff",
+                        "surface-container": "#f8fafc",
+                        "outline": "#cbd5e1",
+                        "secondary": "#93c5fd",
+                        "on-tertiary-fixed": "#5b3e00",
+                        "secondary-fixed-dim": "#93c5fd",
+                        "on-tertiary-container": "#5f4a00",
+                        "on-secondary": "#0f172a",
+                        "on-tertiary-fixed-variant": "#956c31",
+                        "surface-container-lowest": "#eef2ff",
+                        "inverse-primary": "#7c3aed",
+                        "tertiary-fixed-dim": "#fde68a",
+                        "on-secondary-fixed": "#0f172a",
+                        "on-surface": "#0f172a",
+                        "outline-variant": "#94a3b8",
+                        "on-error-container": "#7f1d1d",
+                        "on-primary-container": "#5b21b6",
+                        "surface": "#ffffff",
+                        "on-tertiary": "#432c00",
+                        "error": "#ffb4ab",
+                        "background": "#eef2ff",
+                        "surface-container-low": "#f3f4f6",
+                        "on-surface-variant": "#64748b",
+                        "primary-container": "#d8b4fe",
+                        "surface-container-highest": "#e2e8f0",
+                        "surface-tint": "#ddb7ff",
+                        "tertiary-container": "#facc15",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "surface-bright": "#f8fafc",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-fixed": "#ffdead",
+                        "surface-container-high": "#2a2a2a",
+                        "error-container": "#93000a",
+                        "on-primary": "#490080",
+                        "secondary-container": "#0566d9",
+                        "primary": "#c026d3",
+                        "secondary-fixed": "#d8e2ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "card-padding": "32px",
+                        "section-gap-desktop": "120px",
+                        "container-max-width": "1200px",
+                        "base": "8px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-xl-mobile": ["Geist"],
+                        "body-md": ["Inter"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Geist"],
+                        "headline-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                        "headline-xl-mobile": ["40px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        html {
+        scroll-behavior: smooth;
+    }
+
+    .glass-card {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: #a78bfa;
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.14);
+            transform: translateY(-1px);
+        }
+
+        .glow-button {
+            transition: all 0.2s ease;
+        }
+
+        .glow-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b-2 border-primary/50">
+        <nav class="max-w-[1200px] mx-auto flex flex-wrap justify-between items-center px-gutter h-20 gap-4 md:gap-0">
+            <a id="brand-title" href="index.html" class="font-headline-lg text-2xl md:text-headline-lg font-extrabold tracking-tighter leading-tight text-primary max-w-full md:max-w-none text-center md:text-left">
+                Full Stack Web Developer
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface/70 hover:text-on-surface transition-colors font-body-md" href="/">Home</a>
+                <a class="text-primary border-b-2 border-primary pb-1 font-body-md" href="#projects">Projects</a>
+                <a class="text-on-surface/70 hover:text-on-surface transition-colors font-body-md"
+                    href="#skills">Skills</a>
+                <a class="text-on-surface/70 hover:text-on-surface transition-colors font-body-md"
+                    href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="bg-primary text-white text-on-primary px-4 py-2.5 rounded-lg font-body-md font-bold glow-button text-sm md:text-base inline-flex items-center justify-center">
+                Get in Touch
+            </a>
+        </nav>
+    </header>
+    <main class="pt-20">
+        <!-- Project Gallery -->
+        <section class="pt-10 px-gutter max-w-[1200px] mx-auto" id="projects">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="font-headline-lg text-headline-lg">Professional Projects</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Crafting fast, scalable, and user-focused web experiences.</p>
+                </div>
+            </div>
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="pt-10 px-gutter max-w-[1200px] mx-auto" id="contact">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg mb-6">Get In Touch</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Have a project in mind or just want to chat about tech? Feel free to reach out. I'm always open
+                        to discussing new opportunities and interesting builds.
+                    </p>
+                    <div class="space-y-6">
+                        <a class="flex items-center gap-4 text-primary group" href="mailto:hello@devarchitect.com">
+                            <div
+                                class="w-12 h-12 rounded-full glass-card flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <span class="font-body-lg">hello@devarchitect.com</span>
+                        </a>
+                        <div class="flex items-center gap-4 text-on-surface-variant">
+                            <div class="w-12 h-12 rounded-full glass-card flex items-center justify-center">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <span class="font-body-lg">San Francisco, CA / Remote</span>
+                        </div>
+                        <a class="flex items-center gap-4 text-primary" href="https://www.linkedin.com/in/subhash-kumar-123456789/" target="_blank">
+                            <div class="w-12 h-12 rounded-full glass-card flex items-center justify-center">
+                                <span class="material-symbols-outlined">link</span>
+                            </div>
+                            <span class="font-body-lg">LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-xl">
+                    <form class="space-y-6" onsubmit="return false">
+                        <div class="space-y-2">
+                            <label class="font-label-mono text-[12px] uppercase text-on-surface-variant">Full
+                                Name</label>
+                            <input
+                                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 text-on-surface"
+                                placeholder="John Doe" type="text" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label-mono text-[12px] uppercase text-on-surface-variant">Email
+                                Address</label>
+                            <input
+                                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 text-on-surface"
+                                placeholder="john@example.com" type="email" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label-mono text-[12px] uppercase text-on-surface-variant">Message</label>
+                            <textarea
+                                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 text-on-surface"
+                                placeholder="How can I help you?" rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold glow-button flex items-center justify-center gap-2"
+                            type="button">
+                            Send Message
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full border-t border-white/10 bg-surface-container-lowest py-4">
+        <div class="max-w-[1200px] justify-center mx-auto px-gutter flex flex-col md:flex-row items-center gap-base">
+            
+            <div class="font-body-md text-center text-body-md text-on-surface-variant">
+                © <span id="current-year">2026</span> Full Stack Web Developer. Engineered for Performance.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function renderProjects() {
+            const grid = document.getElementById('projects-grid');
+            if (!grid) return;
+
+            try {
+                const response = await fetch('data.json', { cache: 'no-store' });
+                if (!response.ok) throw new Error('Unable to load data.json');
+                const data = await response.json();
+                const projects = Array.isArray(data.projects) ? data.projects : [];
+                
+                const brand = document.getElementById('brand-title');
+                if(brand) brand.textContent = data.page_title || brand.textContent;
+
+                grid.innerHTML = '';
+                if (projects.length === 0) {
+                    grid.innerHTML = '<div class="md:col-span-full text-center text-on-surface-variant">No projects available.</div>';
+                    return;
+                }
+
+                projects.forEach(project => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-card rounded-xl overflow-hidden flex flex-col h-full';
+
+                    const media = document.createElement('div');
+                    media.className = 'aspect-video bg-surface-container relative overflow-hidden group';
+                    media.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-primary/20"></div>';
+
+                    const body = document.createElement('div');
+                    body.className = 'p-card-padding flex flex-col flex-grow';
+
+                    const tags = document.createElement('div');
+                    tags.className = 'flex flex-wrap gap-2 mb-4';
+                    (project.techstack || []).forEach(tag => {
+                        const span = document.createElement('span');
+                        span.className = 'font-label-mono text-[12px] bg-surface border border-white/10 px-2 py-0.5 rounded text-on-surface-variant';
+                        span.textContent = tag;
+                        tags.appendChild(span);
+                    });
+
+                    const title = document.createElement('h3');
+                    title.className = 'font-headline-lg text-[24px] mb-2';
+                    title.textContent = project.name || 'Untitled Project';
+
+                    const description = document.createElement('p');
+                    description.className = 'font-body-md text-on-surface-variant mb-6 flex-grow';
+                    description.textContent = project.short_description || '';
+
+                    const link = document.createElement('a');
+                    link.className = 'inline-flex items-center gap-2 text-primary font-body-md hover:gap-4 transition-all';
+                    link.href = project.link || '#';
+                    link.textContent = 'Explore Project ';
+
+                    const icon = document.createElement('span');
+                    icon.className = 'material-symbols-outlined';
+                    icon.textContent = 'arrow_right_alt';
+                    link.appendChild(icon);
+
+                    body.appendChild(tags);
+                    body.appendChild(title);
+                    body.appendChild(description);
+                    body.appendChild(link);
+
+                    card.appendChild(media);
+                    card.appendChild(body);
+                    grid.appendChild(card);
+                });
+            } catch (error) {
+                console.error(error);
+                grid.innerHTML = '<div class="md:col-span-full text-center text-red-500">Unable to load projects.</div>';
+            }
+        }
+
+        (function setYear(){
+            var el = document.getElementById('current-year');
+            if(el) el.textContent = new Date().getFullYear();
+        })();
+
+        renderProjects();
+    </script>
+
+    </body>
+
+    </html>
