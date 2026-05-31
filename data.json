@@ -5,11 +5,11 @@
     "user": {
         "profile_picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
         "name": "Sanjay",
-        "title": "Full Stack Web Developer",
-        "subtitle": "Specializing in Angular, Laravel & MySQL.",
-        "description": "I build scalable web applications, dashboards, APIs, and business platforms using Angular and Laravel. Experienced in payment integrations, Firebase services, and modern frontend development.",
-        "experience_years": 8,
-        "total_projects": 20,
+        "title": "iOS Developer",
+        "subtitle": "Experienced with Sport events, Augmented Reality, IoT & Maps based apps.",
+        "description": "Passionate and dedicated Mobile Developer with hands-on experience in creating innovative applications with iOS.",
+        "experience_years": 10,
+        "total_projects": 20+,
         "contact": {
             "email": "sanjaychangani90@gmail.com",
             "location": "Rajkot, Gujarat, India",
