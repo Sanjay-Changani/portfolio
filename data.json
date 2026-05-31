@@ -11,22 +11,22 @@
         "experience_years": 8,
         "total_projects": 20,
         "contact": {
-            "email": "hello@devarchitect.com",
-            "location": "San Francisco, CA / Remote",
-            "linkedin": "https://www.linkedin.com/in/subhash-kumar-123456789/"
+            "email": "sanjaychangani90@gmail.com",
+            "location": "Rajkot, Gujarat, India",
+            "linkedin": "http://www.linkedin.com/in/sanjaychangani"
         },
         "experience": [
             {
-                "company": "Company Name 1",
-                "role": "Full Stack Developer",
-                "duration": "Jan 2023 — Present",
-                "description": "Developed and maintained scalable business web applications. Built dashboards, REST APIs, and integrated third-party services."
+                "company": "BMAC Infotech",
+                "role": "Senior iOS Developer",
+                "duration": "Oct 2017 — Present",
+                "description": "Handling project management and team leading with latest tools and improved skills to provide quality products."
             },
             {
-                "company": "Company Name 2",
-                "role": "Full Stack Developer",
-                "duration": "Jan 2021 — Dec 2022",
-                "description": "Worked on performance optimization and feature development in production systems."
+                "company": "Virtue Infotech",
+                "role": "iOS Developer",
+                "duration": "Jan 2014 — Oct 2017",
+                "description": "iOS app developement with team mentorship. Improving apps with latest tools, user friendly experiance."
             }
         ]
     },
