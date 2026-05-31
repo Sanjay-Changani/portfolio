@@ -191,6 +191,589 @@
           <div class="relative flex flex-col items-center gap-4">
             <div class="flex flex-col sm:flex-row items-center gap-6 w-full justify-between">
               <div class="text-center sm:text-left">
+                <div id = "user-title" class="text-on-surface text-sm uppercase tracking-[0.25em] mb-2">Web Developer</div>
+                <h3 id="user-name" class="font-headline-lg text-3xl text-headline-lg mb-2">Hi, I’m Subhash</h3>
+                <p id="user-subtitle" class="font-body-md text-on-surface-variant text-primary font-bold">Specializing in Angular, Laravel &amp; MySQL.</p>
+              </div>
+              <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-primary shadow-xl flex-shrink-0">
+                <img id="profile-img" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+                  alt="Profile photo" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <p id="user-description" class="font-body-md text-on-surface-variant max-w-2xl text-center sm:text-left mx-auto sm:mx-0">
+              I build scalable web applications, dashboards, APIs, and business platforms using Angular and Laravel. Experienced in payment integrations, Firebase services, and modern frontend development.
+            </p>
+            <div class="grid grid-cols-2 gap-4 w-full">
+              <div class="rounded-3xl bg-surface p-5 border border-white/10 text-center">
+                <div id="experience-years" class="text-3xl font-bold text-primary">8+</div>
+                <div
+                  class="font-label-mono text-[12px] uppercase tracking-[0.2em] text-on-surface-variant mt-2">
+                  Years Experience</div>
+              </div>
+              <div class="rounded-3xl bg-surface p-5 border border-white/10 text-center">
+                <div id="total-projects" class="text-3xl font-bold text-primary">20+</div>
+                <div
+                  class="font-label-mono text-[12px] uppercase tracking-[0.2em] text-on-surface-variant mt-2">
+                  Projects Delivered</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-gutter max-w-[1200px] mx-auto" id="skills">
+      <div class=" mb-6">
+        <h2 class="font-headline-lg text-headline-lg">Tech Stack</h2>
+        <p class="font-body-md text-on-surface-variant">The tools and technologies I use to bring ideas to
+          life.</p>
+      </div>
+      <div class="bg-surface rounded-3xl border border-white/10 p-6 w-full">
+
+        <div id="tech-stack" class="space-y-5">
+
+        </div>
+
+      </div>
+            
+    </section>
+    <!-- Project Gallery -->
+    <section class="pt-10 px-gutter max-w-[1200px] mx-auto" id="projects">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-6">
+        <div class="max-w-2xl">
+          <h2 class="font-headline-lg text-headline-lg">Professional Projects</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">Crafting fast, scalable, and user-focused web experiences.</p>
+        </div>
+      </div>
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- dynamic project cards will be injected here -->
+      </div>
+    </section>
+        
+    <section class="pt-10 px-gutter max-w-[1200px] mx-auto">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-6">
+        <div class="max-w-2xl">
+          <h2 class="font-headline-lg text-headline-lg">Professional Experience</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">My professional journey across web development roles and projects.</p>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div id="experience-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      </div>
+
+    </section>
+    <!-- Contact Section -->
+    <section class="pt-10 px-gutter max-w-[1200px] mx-auto" id="contact">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="font-headline-lg text-headline-lg mb-6">Get In Touch</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+            Have a project in mind or just want to chat about tech? Feel free to reach out. I'm always open
+            to discussing new opportunities and interesting builds.
+          </p>
+          <div class="space-y-6">
+            <a id="contact-email-link" class="flex items-center gap-4 text-primary group" href="mailto:hello@devarchitect.com">
+              <div
+                class="w-12 h-12 rounded-full glass-card flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <span id="contact-email" class="font-body-lg">hello@devarchitect.com</span>
+            </a>
+            <div class="flex items-center gap-4 text-on-surface-variant">
+              <div class="w-12 h-12 rounded-full glass-card flex items-center justify-center">
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <span id="contact-location" class="font-body-lg">San Francisco, CA / Remote</span>
+            </div>
+            <a id="contact-linkedin" class="flex items-center gap-4 text-primary" href="https://www.linkedin.com/in/subhash-kumar-123456789/" target="_blank">
+              <div class="w-12 h-12 rounded-full glass-card flex items-center justify-center">
+                <span class="material-symbols-outlined">link</span>
+              </div>
+              <span class="font-body-lg">LinkedIn Profile</span>
+            </a>
+          </div>
+        </div>
+        <div class="glass-card p-8 rounded-xl">
+          <form id="contact-form" class="space-y-6" onsubmit="return false">
+            <p id="contact-form-error" class="text-red-500 text-sm hidden" style="display:none"></p>
+            <div class="space-y-2">
+              <label class="font-label-mono text-[12px] uppercase text-on-surface-variant">Full
+                Name</label>
+              <input id="contact-name"
+                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 text-on-surface"
+                placeholder="John Doe" type="text" />
+            </div>
+            <div class="space-y-2">
+              <label class="font-label-mono text-[12px] uppercase text-on-surface-variant">Email
+                Address</label>
+              <input id="contact-email-input"
+                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 text-on-surface"
+                placeholder="john@example.com" type="email" />
+            </div>
+            <div class="space-y-2">
+              <label class="font-label-mono text-[12px] uppercase text-on-surface-variant">Message</label>
+              <textarea id="contact-message"
+                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 text-on-surface"
+                placeholder="How can I help you?" rows="4"></textarea>
+            </div>
+            <button id="contact-send-btn"
+              class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold glow-button flex items-center justify-center gap-2"
+              type="button">
+              Send Message
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="w-full border-t border-white/10 bg-surface-container-lowest py-4">
+    <div class="max-w-[1200px] justify-center mx-auto px-gutter flex flex-col md:flex-row items-center gap-base">
+            
+      <div class="font-body-md text-center text-body-md text-on-surface-variant">
+        © <span id="current-year">2026</span> <span id="footer-title">Full Stack Web Developer</span>. Engineered for Performance.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // alert('sdfsdgsdg');
+    // console.log("Script loaded");
+    async function applyData() {
+      try{
+        //const res = await fetch('data.json', {cache:'no-store'});
+        //if(!res.ok) throw new Error('Could not load data.json');
+        //const data = await res.json();
+        const data = {
+            "page_title": "Sanjay's Portfolio",
+            "page_tag_line": "Passionate and dedicated Mobile Developer with precision",
+            "page_description": "Having 10+ year of hands-on experience in creating innovative mobile applications with iOS languages & tools. Adept and delivering performance-driven solutions, collaborating with cross-functional teams & adapting to evolving technology with mobile applications.",
+            "user": {
+                "profile_picture": "https://media.licdn.com/dms/image/v2/D5603AQEEfLWJ-Do-FA/profile-displayphoto-crop_800_800/B56Z2STjhhH4AM-/0/1776276096644?e=1781740800&v=beta&t=58rywrN7fZAbrxrzPfk9sfJAw6EaT8OoC9jPOhCIP1M",
+                "name": "Sanjay",
+                "title": "iOS Developer",
+                "subtitle": "Experienced with Event management, Augmented Reality, IoT & Navigation based apps.",
+                "description": "Passionate and dedicated Mobile Developer with hands-on experience in creating innovative applications with iOS.",
+                "experience_years": "10",
+                "total_projects": "20",
+                "contact": {
+                    "email": "sanjaychangani90@gmail.com",
+                    "location": "Rajkot, Gujarat, India",
+                    "linkedin": "http://www.linkedin.com/in/sanjaychangani"
+                },
+                "experience": [
+                    {
+                        "company": "BMAC Infotech",
+                        "role": "Senior iOS Developer",
+                        "duration": "Oct 2017 — Present",
+                        "description": "Handling project management and team leading with latest tools and improved skills to provide quality products."
+                    },
+                    {
+                        "company": "Virtue Infotech",
+                        "role": "iOS Developer",
+                        "duration": "Jan 2014 — Oct 2017",
+                        "description": "iOS app developement with team mentorship. Improving apps with latest tools, user friendly experiance."
+                    }
+                ]
+            },
+            "tech_stack": {
+                "Languages": ["Swift", "SwiftUI", "ObjectiveC"],
+                "tools": ["Git", "Bit Bucket", "Firebase", "Reality Copmposer"],
+                "database": ["SQLite", "CoreData", "Firebase"]
+            },
+            "projects": [
+                {
+                    "name": "Event Wizard, Tournament/League Center",
+                    "short_description": "A Platform where 10+ apps effortlessly manage event, tournament & leagues managing timelines, locations, Ground Mapping, scheduling, and scoring, ensuring a seamless & live experience for organisers and attendees. Empowered with live Augmented Reality advertisings, spatial aware contents & franchise based app personalisations.",
+                    "techstack": ["Swift", "SwiftUI", "Objective-C"],
+                    "link": "#https://apps.apple.com/us/app/tclc/id1622141358"
+                },
+                {
+                    "name": "Golf Apps",
+                    "short_description": "An AI-powered apps based on augmented reality that enables to track golf ball path tracking, person club swing analysis and 3D plaback visualization with ML & AI tools.",
+                    "techstack": ["ML models", "AR", "AI Services"],
+                    "link": "#https://apps.apple.com/us/app/golfform-swing-body-tracker/id6771797704"
+                },
+                {
+                    "name": "Lavaredo, eDIN",
+                    "short_description": "Real time device communication & home automation features sync. with an Augmented environment.",
+                    "techstack": ["Reality Kit", "Home automation Kit"],
+                    "link": "#https-//apps.apple.com/in/app/lavaredo/id6745585758"
+                },
+                {
+                    "name": "AR Apps",
+                    "short_description": "10+ of apps based on augmented reality and spacial content features. 3D content & environment creation, visualization and ML based tracking & analysis.",
+                    "techstack": ["Unity", "AR/Reality Kit"],
+                    "link": "#https://apps.apple.com/in/app/easy-distance-measure-ar/id1436691240"
+               }
+            ]
+        }
+
+        document.title = data.page_title || document.title;
+        // header brand
+        // console.log("applying data", data);
+        const brand = document.getElementById('brand-title');
+        if(brand) brand.textContent = data.page_title || brand.textContent;
+
+        // hero
+        const hero = document.getElementById('hero-headline');
+        if(hero) hero.textContent = data.page_tag_line || hero.textContent;
+        const heroDesc = document.getElementById('hero-description');
+        if(heroDesc) heroDesc.textContent = data.page_description || heroDesc.textContent;
+
+        // user card
+        const userTitle = document.getElementById('user-title');
+        if(userTitle) userTitle.textContent = (data.user?.title) ? `${data.user.title}` : userTitle.textContent;
+
+        const userName = document.getElementById('user-name');
+        if(userName) userName.textContent = (data.user?.name) ? `Hi, I\u2019m ${data.user.name}` : userName.textContent;
+        const userSubtitle = document.getElementById('user-subtitle');
+        if(userSubtitle) userSubtitle.textContent = data.user?.subtitle || userSubtitle.textContent;
+        const userDesc = document.getElementById('user-description');
+        if(userDesc) userDesc.textContent = data.user?.description || userDesc.textContent;
+        const profileImg = document.getElementById('profile-img');
+        if(profileImg && data.user?.profile_picture) profileImg.src = data.user.profile_picture;
+
+        // metrics
+        const expEl = document.getElementById('experience-years');
+        if(expEl) expEl.textContent = (data.user?.experience_years ? `${data.user.experience_years}+` : expEl.textContent);
+        const projEl = document.getElementById('total-projects');
+        if(projEl) projEl.textContent = (data.user?.total_projects ? `${data.user.total_projects}+` : projEl.textContent);
+
+        // tech stack
+        const techRoot = document.getElementById('tech-stack');
+        if(techRoot){
+          techRoot.innerHTML = '';
+          const tech = data.tech_stack || {};
+          console.log("tech",tech);
+          for(const [category, arr] of Object.entries(tech)){
+            const wrap = document.createElement('div');
+            const title = document.createElement('h5'); title.className='py-2 text-sm font-semibold text-on-surface'; title.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+            wrap.appendChild(title);
+            const row = document.createElement('div'); row.className='flex flex-wrap gap-3';
+            if(Array.isArray(arr)) arr.forEach(t=>{ const s=document.createElement('span'); s.className='px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm'; s.textContent=t; row.appendChild(s)});
+            wrap.appendChild(row);
+            techRoot.appendChild(wrap);
+          }
+        }
+
+        // projects
+        const projectsGrid = document.getElementById('projects-grid');
+        if(projectsGrid){
+          projectsGrid.innerHTML = '';
+          const allProjects = data.projects || [];
+          const displayProjects = allProjects.slice(0, 3); // Limit to 3 projects
+          displayProjects.forEach(p=>{
+            const card = document.createElement('div'); card.className='glass-card rounded-xl overflow-hidden flex flex-col h-full';
+            const media = document.createElement('div'); media.className='aspect-video bg-surface-container relative overflow-hidden group';
+            media.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-primary/20"></div>';
+            const body = document.createElement('div'); body.className='p-card-padding flex flex-col flex-grow';
+            const tags = document.createElement('div'); tags.className='flex flex-wrap gap-2 mb-4';
+            (p.techstack||[]).forEach(t=>{ const s=document.createElement('span'); s.className='font-label-mono text-[12px] bg-surface border border-white/10 px-2 py-0.5 rounded text-on-surface-variant'; s.textContent=t; tags.appendChild(s)});
+            const h3 = document.createElement('h3'); h3.className='font-headline-lg text-[24px] mb-2'; h3.textContent = p.name || '';
+            const desc = document.createElement('p'); desc.className='font-body-md text-on-surface-variant mb-6 flex-grow'; desc.textContent = p.short_description || '';
+            const a = document.createElement('a'); a.className='inline-flex items-center gap-2 text-primary font-body-md hover:gap-4 transition-all'; a.href = p.link || '#'; a.textContent = 'Explore Project '; const ico = document.createElement('span'); ico.className='material-symbols-outlined'; ico.textContent='arrow_right_alt'; a.appendChild(ico);
+            body.appendChild(tags); body.appendChild(h3); body.appendChild(desc); body.appendChild(a);
+            card.appendChild(media); card.appendChild(body);
+            projectsGrid.appendChild(card);
+          });
+          
+          // Add View All button if there are more than 3 projects
+          if(allProjects.length > 3) {
+            const viewAllWrapper = document.createElement('div');
+            viewAllWrapper.className = 'md:col-span-full flex justify-center';
+            const viewAllBtn = document.createElement('a');
+            viewAllBtn.href = 'projects.html';
+            viewAllBtn.className = 'inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-body-md hover:opacity-90 transition-opacity glow-button';
+            viewAllBtn.textContent = 'View All Projects ';
+            const icon = document.createElement('span');
+            icon.className = 'material-symbols-outlined';
+            icon.textContent = 'arrow_forward';
+            viewAllBtn.appendChild(icon);
+            viewAllWrapper.appendChild(viewAllBtn);
+            projectsGrid.appendChild(viewAllWrapper);
+          }
+        }
+
+        // experience
+        const expGrid = document.getElementById('experience-grid');
+        if(expGrid){
+          expGrid.innerHTML = '';
+          (data.user?.experience||[]).forEach(e=>{
+            const el = document.createElement('div'); el.className='bg-surface border border-white/10 rounded-3xl p-6 md:p-8 hover:border-white/20 transition';
+            const top = document.createElement('div'); top.className='flex items-start justify-between gap-4 mb-3';
+            const h3 = document.createElement('h3'); h3.className='text-xl font-semibold'; h3.textContent = e.company || '';
+            const span = document.createElement('span'); span.className='text-sm text-on-surface-variant whitespace-nowrap'; span.textContent = e.duration || '';
+            top.appendChild(h3); top.appendChild(span);
+            const role = document.createElement('p'); role.className='text-on-surface-variant font-medium mb-4'; role.textContent = e.role || '';
+            const desc = document.createElement('p'); desc.className='text-on-surface-variant leading-relaxed'; desc.textContent = e.description || '';
+            el.appendChild(top); el.appendChild(role); el.appendChild(desc);
+            expGrid.appendChild(el);
+          });
+        }
+
+        // contact
+        const emailLink = document.getElementById('contact-email-link');
+        const emailText = document.getElementById('contact-email');
+        if(emailLink && emailText && data.user?.contact?.email){ emailLink.href = `mailto:${data.user.contact.email}`; emailText.textContent = data.user.contact.email }
+        const loc = document.getElementById('contact-location'); if(loc) loc.textContent = data.user?.contact?.location || loc.textContent;
+        const ln = document.getElementById('contact-linkedin'); if(ln && data.user?.contact?.linkedin) ln.href = data.user.contact.linkedin;
+
+        // footer
+        const cy = document.getElementById('current-year'); if(cy) cy.textContent = new Date().getFullYear();
+        const ft = document.getElementById('footer-title'); if(ft) ft.textContent = data.user?.title || ft.textContent;
+
+      } catch(err){ console.error(err); }
+    }
+
+    function showContactError(message) {
+      const errorEl = document.getElementById('contact-form-error');
+      if(errorEl) {
+        errorEl.textContent = message;
+        errorEl.classList.remove('hidden');
+        errorEl.style.display = 'block';
+      }
+    }
+
+    function clearContactValidation() {
+      const errorEl = document.getElementById('contact-form-error');
+      if(errorEl) {
+        errorEl.textContent = '';
+        errorEl.classList.add('hidden');
+        errorEl.style.display = 'none';
+      }
+      ['contact-name','contact-email-input','contact-message'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) {
+          el.style.borderColor = '';
+        }
+      });
+    }
+
+    function validateContactForm() {
+      clearContactValidation();
+      const name = document.getElementById('contact-name')?.value?.trim() || '';
+      const email = document.getElementById('contact-email-input')?.value?.trim() || '';
+      const message = document.getElementById('contact-message')?.value?.trim() || '';
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if(!name) {
+        const input = document.getElementById('contact-name');
+        if(input) input.style.borderColor = '#f87171';
+        showContactError('Please enter your name.');
+        return false;
+      }
+      if(!email) {
+        const input = document.getElementById('contact-email-input');
+        if(input) input.style.borderColor = '#f87171';
+        showContactError('Please enter your email address.');
+        return false;
+      }
+      if(!emailPattern.test(email)) {
+        const input = document.getElementById('contact-email-input');
+        if(input) input.style.borderColor = '#f87171';
+        showContactError('Please enter a valid email address.');
+        return false;
+      }
+      if(!message) {
+        const input = document.getElementById('contact-message');
+        if(input) input.style.borderColor = '#f87171';
+        showContactError('Please enter a message.');
+        return false;
+      }
+      return true;
+    }
+
+    function openMailClient() {
+      if(!validateContactForm()) return;
+
+      const recipient = document.getElementById('contact-email')?.textContent || '';
+      const senderName = document.getElementById('contact-name')?.value?.trim() || '';
+      const senderEmail = document.getElementById('contact-email-input')?.value?.trim() || '';
+      const message = document.getElementById('contact-message')?.value?.trim() || '';
+
+      const subject = encodeURIComponent(senderName ? `Portfolio inquiry from ${senderName}` : 'Portfolio inquiry');
+      const bodyLines = [];
+      if(senderName) bodyLines.push(`Name: ${senderName}`);
+      if(senderEmail) bodyLines.push(`Email: ${senderEmail}`);
+      if(message) bodyLines.push('', 'Message:', message);
+      const body = encodeURIComponent(bodyLines.join('\n'));
+
+      const mailto = `mailto:${recipient}?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+    }
+
+    applyData();
+    document.getElementById('contact-send-btn')?.addEventListener('click', openMailClient);
+    document.getElementById('contact-form')?.addEventListener('submit', function(event){
+      event.preventDefault();
+      openMailClient();
+    });
+    ['contact-name','contact-email-input','contact-message'].forEach(id => {
+      document.getElementById(id)?.addEventListener('input', clearContactValidation);
+    });
+</script>
+            "secondary": "#93c5fd",
+            "on-tertiary-fixed": "#5b3e00",
+            "secondary-fixed-dim": "#93c5fd",
+            "on-tertiary-container": "#5f4a00",
+            "on-secondary": "#0f172a",
+            "on-tertiary-fixed-variant": "#956c31",
+            "surface-container-lowest": "#eef2ff",
+            "inverse-primary": "#7c3aed",
+            "tertiary-fixed-dim": "#fde68a",
+            "on-secondary-fixed": "#0f172a",
+            "on-surface": "#0f172a",
+            "outline-variant": "#94a3b8",
+            "on-error-container": "#7f1d1d",
+            "on-primary-container": "#5b21b6",
+            "surface": "#ffffff",
+            "on-tertiary": "#432c00",
+            "error": "#ffb4ab",
+            "background": "#eef2ff",
+            "surface-container-low": "#f3f4f6",
+            "on-surface-variant": "#64748b",
+            "primary-container": "#d8b4fe",
+            "surface-container-highest": "#e2e8f0",
+            "surface-tint": "#ddb7ff",
+            "tertiary-container": "#facc15",
+            "primary-fixed-dim": "#ddb7ff",
+            "surface-bright": "#f8fafc",
+            "inverse-on-surface": "#313030",
+            "tertiary-fixed": "#ffdead",
+            "surface-container-high": "#2a2a2a",
+            "error-container": "#93000a",
+            "on-primary": "#490080",
+            "secondary-container": "#0566d9",
+            "primary": "#c026d3",
+            "secondary-fixed": "#d8e2ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "24px",
+            "card-padding": "32px",
+            "section-gap-desktop": "120px",
+            "container-max-width": "1200px",
+            "base": "8px",
+            "section-gap-mobile": "64px"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Geist"],
+            "body-md": ["Inter"],
+            "label-mono": ["JetBrains Mono"],
+            "body-lg": ["Inter"],
+            "headline-xl": ["Geist"],
+            "headline-lg": ["Geist"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["40px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "label-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .glass-card:hover {
+      border-color: #a78bfa;
+      box-shadow: 0 22px 55px rgba(15, 23, 42, 0.14);
+      transform: translateY(-1px);
+    }
+
+    .glow-button {
+      transition: all 0.2s ease;
+    }
+
+    .glow-button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+  <!-- TopNavBar -->
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b-2 border-primary/50">
+    <nav class="max-w-[1200px] mx-auto flex justify-between items-center px-gutter h-20">
+      <a id="brand-title" href="index.html" class="font-headline-lg text-2xl md:text-headline-lg font-extrabold tracking-tighter leading-tight text-primary max-w-full md:max-w-none text-center md:text-left">
+                Full Stack Web Developer
+            </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-primary border-b-2 border-primary pb-1 font-body-md" href="/">Home</a>
+        <a class="text-on-surface/70 hover:text-on-surface transition-colors font-body-md" href="#projects">Projects</a>
+        <a class="text-on-surface/70 hover:text-on-surface transition-colors font-body-md"
+          href="#skills">Skills</a>
+        <a class="text-on-surface/70 hover:text-on-surface transition-colors font-body-md"
+          href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="bg-primary text-white text-on-primary px-6 py-2.5 rounded-lg font-body-md font-bold glow-button inline-flex items-center justify-center">
+        Get in Touch
+      </a>
+    </nav>
+  </header>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="px-gutter py-section-gap-mobile md:py-[30px] max-w-[1200px] mx-auto">
+      <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] ">
+        <div class="hidden lg:block lg:text-left text-center">
+          <div
+            class="inline-flex items-center mb-6 gap-2 px-3 py-1 rounded-full bg-surface-container border border-white/10 mb-4 justify-center lg:justify-start">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Available for
+              new projects</span>
+          </div>
+          <h1 id="hero-headline"
+            class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile mb-6 max-w-4xl mx-auto lg:mx-0">
+            Building Digital Experiences with <span class="text-primary">Precision &amp; Passion</span>
+          </h1>
+          <p id="hero-description" class="font-body-lg mb-6 text-body-lg text-on-surface-variant max-w-2xl mx-auto lg:mx-0">
+            Specializing in robust Full-Stack Development and architecture. I transform complex ideas into
+            high-performance web applications using modern technology stacks.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a class="bg-primary text-white text-on-primary px-8 py-4 rounded-lg font-headline-lg text-body-md flex items-center justify-center gap-2 glow-button"
+              href="#projects">
+              View My Work
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a class="glass-card px-8 py-4 rounded-lg font-body-md flex items-center justify-center hover:bg-white/10"
+              href="#contact">
+              Contact Me
+            </a>
+          </div>
+        </div>
+        <div
+          class="relative rounded-[32px] overflow-hidden glass-card border border-white/10 p-6 shadow-2xl bg-surface-container-lowest">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/10 pointer-events-none">
+          </div>
+          <div class="relative flex flex-col items-center gap-4">
+            <div class="flex flex-col sm:flex-row items-center gap-6 w-full justify-between">
+              <div class="text-center sm:text-left">
                 <div class="text-on-surface text-sm uppercase tracking-[0.25em] mb-2">Web Developer</div>
                 <h3 id="user-name" class="font-headline-lg text-3xl text-headline-lg mb-2">Hi, I’m Subhash</h3>
                 <p id="user-subtitle" class="font-body-md text-on-surface-variant text-primary font-bold">Specializing in Angular, Laravel &amp; MySQL.</p>
